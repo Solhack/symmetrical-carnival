@@ -1,0 +1,1 @@
+web: npm install && ng build --aot --prod && node server.js

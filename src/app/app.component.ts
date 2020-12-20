@@ -44,3 +44,5 @@ export class AppComponent {
   //      hasRun = true;
   //  }
 //});
+declare var formatThousandsNoRounding: (n: any, dp: any) => string;
+declare var hasRun: boolean;

@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 // use the express-static middleware
-app.use(express.static('./socgamify/dist'));
+app.use(express.static('./socgamify/dist/socgamify/'));
 
 // define the first route
 app.get("/index.html", function (req, res) {

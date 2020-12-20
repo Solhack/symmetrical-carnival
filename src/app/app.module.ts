@@ -9,16 +9,26 @@ import { ScoreboardPipe } from './scoreboard.pipe';
 import { NotificationsPipe } from './notifications.pipe';
 import { RankingPipe } from './ranking.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login.component';
+import { Ip_trackingComponent } from './ip_tracking/ip_tracking.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { ScoreboardComponent } from './scoreboard/scoreboard.component';
+import { RankingComponent } from './ranking/ranking.component';
 
 @NgModule({
-  declarations: [
+  declarations: [					
     AppComponent,
     LoginPipe,
     IpTrackingPipe,
     ScoreboardPipe,
     NotificationsPipe,
-    RankingPipe
-  ],
+    RankingPipe,
+      LoginComponent,
+      Ip_trackingComponent,
+      NotificationsComponent,
+      ScoreboardComponent,
+      RankingComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -19,28 +19,28 @@ var formatThousandsNoRounding = function(n, dp){
         ('00000').substr(0, dp - d.length):e):e);
 };
 
-var hasRun = false;
+//var hasRun = false;
 
-inView('#countUp').on('enter', function() {
-    if (hasRun == false) {
-        $('.number').each(function() {
-            var $this = $(this),
-                countTo = $this.attr('data-count');
+//inView('#countUp').on('enter', function() {
+//    if (hasRun == false) {
+ //       $('.number').each(function() {
+ //           var $this = $(this),
+ //               countTo = $this.attr('data-count');
 
-            $({ countNum: $this.text()}).animate({
-                countNum: countTo
-            },
-            {
-                duration: 2000,
-                easing:'linear',
-                step: function() {
-                    $this.text(formatThousandsNoRounding(Math.floor(this.countNum)));
-                },
-                complete: function() {
-                    $this.text(formatThousandsNoRounding(this.countNum));
-                }
-            });
-        });
-        hasRun = true;
-    }
-});
+ //           $({ countNum: $this.text()}).animate({
+ //               countNum: countTo
+  //          },
+  //          {
+   //             duration: 2000,
+  //              easing:'linear',
+   //             step: function() {
+   //                 $this.text(formatThousandsNoRounding(Math.floor(this.countNum)));
+  //              },
+  //              complete: function() {
+  //                  $this.text(formatThousandsNoRounding(this.countNum));
+  //              }
+  //          });
+  //      });
+  //      hasRun = true;
+  //  }
+//});

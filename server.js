@@ -3,11 +3,11 @@ const express = require("express");
 const app = express();
 
 // use the express-static middleware
-app.use(express.static('./socgamify/dist/socgamify/'));
+app.use(express.static('./dist/socgamify'));
 
 // define the first route
-app.get("/index.html", function (req, res) {
-  res.sendFile('index.html', {root: 'dist/'}
+app.get("/*", function (req, res) {
+  res.sendFile('index.html', {root: 'dist/socgamify/index.html'}
   );
 
 });

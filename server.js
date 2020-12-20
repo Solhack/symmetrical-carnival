@@ -1,17 +1,16 @@
 // create an express app
-const express = require("express");
+const express = require('express');
+const path = require('path');
+
 const app = express();
 
-// use the express-static middleware
-app.use(express.static('./dist/socgamify'));
+// Serve only the static files form the dist directory
+app.use(express.static(__dirname + '/dist/socgamify'));
 
-// define the first route
-app.get("/*", function (req, res) {
-  res.sendFile('index.html', {root: 'dist/socgamify/index.html'}
-  );
+app.get('/*', function(req,res) {
 
+res.sendFile(path.join(__dirname+'/dist/socgamify/index.html'));
 });
 
-// start the server listening for requests
-app.listen(process.env.PORT || 8080, 
-	() => console.log("Server is running... http://localhost:8080/"));
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);

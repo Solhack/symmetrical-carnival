@@ -14,9 +14,10 @@ import { Ip_trackingComponent } from './ip_tracking/ip_tracking.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 import { RankingComponent } from './ranking/ranking.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [					
+  declarations: [						
     AppComponent,
     LoginPipe,
     IpTrackingPipe,
@@ -27,7 +28,8 @@ import { RankingComponent } from './ranking/ranking.component';
       Ip_trackingComponent,
       NotificationsComponent,
       ScoreboardComponent,
-      RankingComponent
+      RankingComponent,
+      HomeComponent
    ],
   imports: [
     BrowserModule,

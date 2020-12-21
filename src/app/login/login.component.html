@@ -1,3 +1,31 @@
-<p>
-  login works!
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="/images/favicon.png"/>
+
+    <title>Snode - SocGamify</title>
+
+    <link href=/css/app.css?id=078e10b14b7a5920f92a rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/site.css?id=4d532006eacaa5985cf7"/>
+    
+    </head>
+<body class="public">
+<div class="overlay-container">
+    <div id="overlay"><img src="/images/preloader_lg.gif?id=60e9785da0cf08e1a36c" /></div>
+</div>
+<div id="app" class="middle-box text-center animated fadeInDown">
+        <router-view name="publicIndex"></router-view>
+    <router-view></router-view>
+</div>
+
+<!-- Mainly scripts -->
+
+
+<script src="/js/guest/vendors.js?id=e427426134d3fa3a3697"></script>
+<script src="/js/guest/app.js?id=14953b2468bdbc3fa87b"></script>
+
+</body>
+</html>

@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import * as appComponent from './app.component';
 import { LoginPipe } from './login.pipe';
 import { IpTrackingPipe } from './ip-tracking.pipe';
 import { ScoreboardPipe } from './scoreboard.pipe';
@@ -15,10 +15,12 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 import { RankingComponent } from './ranking/ranking.component';
 import { HomeComponent } from './home/home.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+
 
 @NgModule({
-  declarations: [						
-    AppComponent,
+  declarations: [								
+    appComponent.AppComponent,
     LoginPipe,
     IpTrackingPipe,
     ScoreboardPipe,
@@ -29,7 +31,8 @@ import { HomeComponent } from './home/home.component';
       NotificationsComponent,
       ScoreboardComponent,
       RankingComponent,
-      HomeComponent
+      HomeComponent,
+      NotfoundComponent
    ],
   imports: [
     BrowserModule,
@@ -37,6 +40,6 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [appComponent.AppComponent]
 })
 export class AppModule { }

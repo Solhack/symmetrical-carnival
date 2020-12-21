@@ -41,6 +41,7 @@ body {
     .number {
         font-size: 4rem;
         font-weight: 500;
+        padding-bottom: 15px;
     }
          .text {
             margin: 0 0 1rem;

@@ -1,5 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { Component, NgModule } from '@angular/core';
+import { MatToolbarModule,
+  MatMenuModule,
+  MatIconModule,
+  MatButtonModule,
+  MatTableModule,
+  MatDividerModule,
+  MatProgressSpinnerModule,
+  MatInputModule,
+  MatCardModule,
+  MatSlideToggleModule,
+  MatSelectModule,
+  MatOptionModule} from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import * as appComponent from './app.component';
@@ -19,7 +31,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 
 
 @NgModule({
-  declarations: [								
+  declarations: [
     appComponent.AppComponent,
     LoginPipe,
     IpTrackingPipe,
